@@ -64,7 +64,7 @@ public class BST<T extends Comparable<T>> {
 
     // 查找以node为根的二分搜索树中是否包含该元素
     private boolean contains(Node node, T data){
-        if (node == null){
+        if (node == null || data == null){
             return false;
         }
 
